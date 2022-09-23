@@ -1,0 +1,30 @@
+pool:
+  name: Build-Ecommerce
+steps:
+- task: JoeJulik.install-node-and-npm-task.custom-build-release-task.NodeAndNpmTool@1
+  displayName: 'Use Node 12.x'
+  inputs:
+    versionSpec: 12.x
+
+- task: Npm@1
+  displayName: 'npm install'
+  inputs:
+    verbose: false
+
+- task: Npm@1
+  displayName: 'npm run build'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: 'run build'
+
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
+  inputs:
+    SourceFolder: ./
+    Contents: |
+      dist/**
+    TargetFolder: '$(build.artifactstagingdirectory)'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'

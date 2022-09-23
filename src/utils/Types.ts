@@ -1,0 +1,1 @@
+export type RuleReturnType = (v: string) => string | boolean;

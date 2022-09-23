@@ -1,5 +1,67 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`.vue should not search without implantation value 1`] = `
+<div>
+  <h2 class="my-3"></h2>
+  <!---->
+  <div class="d-flex align-center justify-center">
+    <div>
+      <v-icon-stub>
+        arrow_back
+      </v-icon-stub>
+    </div>
+    <div>
+      <v-select-stub errorcount="1" errormessages="" messages="" rules="" successmessages="" value="" appendicon="$dropdown" backgroundcolor="" loaderheight="2" clearicon="$clear" type="text" valuecomparator="[Function]" nodatatext="$vuetify.noDataText" items="" itemcolor="primary" itemdisabled="disabled" itemtext="market" itemvalue="market" menuprops="[object Object]" class="selectMarket mx-3"></v-select-stub>
+    </div>
+    <div>
+      <v-icon-stub>
+        arrow_forward
+      </v-icon-stub>
+    </div>
+  </div>
+  <div class="d-flex">
+    <v-spacer-stub tag="div"></v-spacer-stub>
+    <v-btn-stub color="error" tag="button" activeclass="" type="button">
+      Annuler
+    </v-btn-stub>
+    <v-btn-stub color="success" tag="button" activeclass="" type="button" class="mx-3">
+      Valider
+    </v-btn-stub>
+  </div>
+</div>
+`;
+
+exports[`EstimatedShopsParameterData.vue should not search without implantation value 1`] = `
+<div>
+  <h2 class="my-3"></h2>
+  <!---->
+  <div class="d-flex align-center justify-center">
+    <div>
+      <v-icon-stub>
+        arrow_back
+      </v-icon-stub>
+    </div>
+    <div>
+      <v-select-stub errorcount="1" errormessages="" messages="" rules="" successmessages="" value="" appendicon="$dropdown" backgroundcolor="" loaderheight="2" clearicon="$clear" type="text" valuecomparator="[Function]" nodatatext="$vuetify.noDataText" items="" itemcolor="primary" itemdisabled="disabled" itemtext="market" itemvalue="market" menuprops="[object Object]" class="selectMarket mx-3"></v-select-stub>
+    </div>
+    <div>
+      <v-icon-stub>
+        arrow_forward
+      </v-icon-stub>
+    </div>
+  </div>
+  <div class="d-flex">
+    <v-spacer-stub tag="div"></v-spacer-stub>
+    <v-btn-stub color="error" tag="button" activeclass="" type="button">
+      Annuler
+    </v-btn-stub>
+    <v-btn-stub color="success" tag="button" activeclass="" type="button" class="mx-3">
+      Valider
+    </v-btn-stub>
+  </div>
+</div>
+`;
+
 exports[`HelloWorld.vue should not search without implantation value 1`] = `
 <div>
   <h2 class="my-3"></h2>

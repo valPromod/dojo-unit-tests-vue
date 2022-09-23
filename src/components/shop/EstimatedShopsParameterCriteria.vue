@@ -80,6 +80,7 @@
           fab
           large
           class="ma-5"
+          id="id-test"
           @click="search(lineSelected, marketsSelected, startYearWeek, endYearWeek)"
           :disabled="!isFormOk"
         >

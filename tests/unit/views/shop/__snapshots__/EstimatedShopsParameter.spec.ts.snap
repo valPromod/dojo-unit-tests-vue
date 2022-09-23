@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EstimatedShopsParameter.vue should not search without implantation value 1`] = `
+<div>
+  <div style="display: none;">
+    <div class="estimated-shops-parameter-criteria">
+      <h1>Projection du parc Magasin</h1>
+      <form novalidate="novalidate" class="v-form my-5">
+        <div class="row">
+          <div class="estimated-shops-parameter-criteria_column col">
+            <div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+              <div class="v-input__control">
+                <div role="button" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-60" class="v-input__slot">
+                  <div class="v-select__slot"><label for="input-60" class="v-label v-label--active theme--light" style="left: 0px; position: absolute;">Ligne</label>
+                    <div class="v-select__selections">
+                      <div class="v-select__selection v-select__selection--comma">1</div><input id="input-60" readonly="readonly" type="text" aria-readonly="false" autocomplete="off">
+                    </div>
+                    <div class="v-input__append-inner">
+                      <div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i></div>
+                    </div><input type="hidden" value="1">
+                  </div>
+                  <div class="v-menu">
+                    <!---->
+                  </div>
+                </div>
+                <div class="v-text-field__details">
+                  <div class="v-messages theme--light">
+                    <transition-group-stub tag="div" name="message-transition" class="v-messages__wrapper"></transition-group-stub>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="v-input theme--light v-text-field v-select v-select--chips v-select--is-multi">
+              <div class="v-input__control">
+                <div role="button" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-65" class="v-input__slot">
+                  <div class="v-select__slot"><label for="input-65" class="v-label theme--light" style="left: 0px; position: absolute;">Marchés</label>
+                    <div class="v-select__selections"><input id="input-65" readonly="readonly" type="text" aria-readonly="false" autocomplete="off"></div>
+                    <div class="v-input__append-inner">
+                      <div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i></div>
+                    </div><input type="hidden">
+                  </div>
+                  <div class="v-menu">
+                    <!---->
+                  </div>
+                </div>
+                <div class="v-text-field__details">
+                  <div class="v-messages theme--light">
+                    <transition-group-stub tag="div" name="message-transition" class="v-messages__wrapper"></transition-group-stub>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="estimated-shops-parameter-criteria_column col">
+            <div class="d-flex align-center"><button type="button" class="v-icon notranslate v-icon--link mdi mdi-minus theme--light"></button>
+              <div class="v-input mx-3 v-input--is-label-active v-input--is-dirty theme--light v-text-field">
+                <div class="v-input__control">
+                  <div class="v-input__slot">
+                    <div class="v-text-field__slot"><label for="input-71" class="v-label v-label--active theme--light" style="left: 0px; position: absolute;">Début</label><input maxlength="6" required="required" id="input-71" type="text"></div>
+                  </div>
+                  <div class="v-text-field__details">
+                    <div class="v-messages theme--light">
+                      <transition-group-stub tag="div" name="message-transition" class="v-messages__wrapper"></transition-group-stub>
+                    </div>
+                  </div>
+                </div>
+              </div> <button type="button" class="v-icon notranslate v-icon--link mdi mdi-plus theme--light"></button>
+            </div>
+            <div class="d-flex align-center"><button type="button" class="v-icon notranslate v-icon--link mdi mdi-minus theme--light"></button>
+              <div class="v-input mx-3 theme--light v-text-field">
+                <div class="v-input__control">
+                  <div class="v-input__slot">
+                    <div class="v-text-field__slot"><label for="input-76" class="v-label theme--light" style="left: 0px; position: absolute;">Fin</label><input maxlength="6" id="input-76" type="text"></div>
+                  </div>
+                  <div class="v-text-field__details">
+                    <div class="v-messages theme--light">
+                      <transition-group-stub tag="div" name="message-transition" class="v-messages__wrapper"></transition-group-stub>
+                    </div>
+                  </div>
+                </div>
+              </div> <button type="button" class="v-icon notranslate v-icon--link mdi mdi-plus theme--light"></button>
+            </div>
+          </div>
+          <div class="spacer"></div> <button type="button" class="ma-5 v-btn v-btn--is-elevated v-btn--fab v-btn--has-bg v-btn--round theme--light v-size--large primary" id="id-test"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate material-icons theme--light white--text">search</i></span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <hr role="separator" aria-orientation="horizontal" class="v-divider theme--light">
+  <div class="alert"></div>
+  <!---->
+  <div role="progressbar" aria-valuemin="0" aria-valuemax="100" class="v-progress-circular loader v-progress-circular--visible v-progress-circular--indeterminate primary--text" style="height: 200px; width: 200px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="20.408163265306122 20.408163265306122 40.816326530612244 40.816326530612244" style="transform: rotate(0deg);">
+      <circle fill="transparent" cx="40.816326530612244" cy="40.816326530612244" r="20" stroke-width="0.8163265306122449" stroke-dasharray="125.664" stroke-dashoffset="125.66370614359172px" class="v-progress-circular__overlay"></circle>
+    </svg>
+    <div class="v-progress-circular__info">Chargement
+    </div>
+  </div>
+</div>
+`;

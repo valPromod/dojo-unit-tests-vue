@@ -1,10 +1,40 @@
 <template>
   <div>
-    <segmentation-form :mode="mode" :segmentations="segmentations" :families="families" :subfamilies="subFamilies" :confidenceLevels="confidenceLevels"
-                        :typologies="typologies"
-                        :destinations="destinations"
-                        :defaultParameters="defaultParameters"
-                        :priorities="priorities"></segmentation-form>
+    <div v-show="!isLoadingCriteria">
+      <estimated-shops-criteria :marketsFromApi="segmentationsMarkets" :criteria="criteria" @search="search"/>
+    </div>
+    <v-divider></v-divider>
+    <div class="alert">
+      <v-alert
+        v-for="(alert,index) in alerts"
+        :key="index"
+        :value="alert.show"
+        :type="alert.type"
+        colored-border
+        dismissible
+        elevation="2"
+        class="ma-0"
+      >
+        {{ alert.message }}
+      </v-alert>
+    </div>
+
+    <estimated-shops-data
+      :estimatedShopsMarketOriginalList="datas"
+      :yearWeeks="yearWeeks"
+      :markets="criteria.markets"
+      @save="save"
+      v-if="datas && datas.length > 0 && !isLoadingData && !isLoadingCriteria"
+    />
+
+    <v-progress-circular
+      :size="200"
+      color="primary"
+      indeterminate
+      v-show="isLoadingData || isLoadingCriteria || isLoadingSave"
+      class="loader"
+    >Chargement
+    </v-progress-circular>
   </div>
 </template>
 
@@ -19,27 +49,17 @@ import ShopSegmentationService from "@/services/shop/ShopSegmentation.service";
 import EstimatedMarketService from "@/services/market/EstimatedMarketService";
 import Alert from "@/model/alert/Alert2";
 import PostEstimatedShopsMarketBean from "@/model/market/PostEstimatedShopsMarketBean";
-import SegmentationForm from "@/components/segmentation/SegmentationForm.vue";
 
 @Component({
   components: {
     EstimatedShopsCriteria,
     EstimatedShopsData,
-    SegmentationForm
   },
 })
 export default class EstimatedShopsParameter extends Vue {
 
   public alerts : Alert[] = [];
-  public segmentations = ["test","test2"];
-  public families = ["20","22"];
-  public subFamilies = ["123","124"];
-  public priorities = ["1","2"]
-  public defaultParameters = ["A","B"];
-  public destinations = ["COE"];
-  public typologies = ["BDC"];
-  public confidenceLevels= ["ELV"];
-  public mode ="AJOUTER"
+
   public isLoadingData = false;
   public isLoadingCriteria = false;
   public isLoadingSave = false;
